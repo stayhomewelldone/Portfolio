@@ -8,7 +8,12 @@ const Navbar = () => {
   const mailtoLink = "mailto:jafir.k@live.nl";
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
+  // const [isMobile, setIsMobile] = useState(false);
 
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     setIsMobile(window.innerWidth < 768); // Adjust the breakpoint as needed
+  //   };
   return (
     <div className="fixed w-full h-[50px] flex justify-between items-center  px-4 bg-[#0a192f] text-gray-300">
       <div>
@@ -16,7 +21,7 @@ const Navbar = () => {
       </div>
       {/* menu */}
 
-      <ul className="hidden md:flex ">
+      <ul className="hidden md:flex font-bold  ">
         <li>
           <Link to="home" smooth={true} duration={500}>
             Home
@@ -52,7 +57,7 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center "
+            : "absolute md:hidden top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center "
         }
       >
         <li className="py-6 text-4xl">
