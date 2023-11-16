@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import pdf from "../assets/Jafir-Kluis.pdf";
 import Logo from "../assets/JK.png";
 import { Link } from "react-scroll";
 const Navbar = () => {
@@ -121,7 +122,7 @@ const Navbar = () => {
             <a
               target="_blank"
               className="flex justify-between items-center w-full text-gray-300 "
-              href="/"
+              href={pdf}
             >
               Resume <BsFillPersonLinesFill size={30} />
             </a>
