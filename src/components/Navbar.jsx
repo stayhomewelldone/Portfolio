@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import pdf from "../assets/Jafir-Kluis.pdf";
+import pdf from "../assets/Jafir_Kluis_resume.pdf";
 import Logo from "../assets/JK.png";
 import { Link } from "react-scroll";
 const Navbar = () => {
